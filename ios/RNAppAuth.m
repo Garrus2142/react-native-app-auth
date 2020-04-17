@@ -380,6 +380,7 @@ RCT_REMAP_METHOD(refresh,
     [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
 
     return @{@"authorizationCode": response.authorizationCode ? response.authorizationCode : @"",
+            @"codeVerifier": response.request.codeVerifier ? response.request.codeVerifier : @"",
             @"state": response.state ? response.state : @"",
             @"accessToken": response.accessToken ? response.accessToken : @"",
             @"accessTokenExpirationDate": response.accessTokenExpirationDate ? [dateFormat stringFromDate:response.accessTokenExpirationDate] : @"",
