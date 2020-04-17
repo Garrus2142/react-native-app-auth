@@ -74,6 +74,7 @@ public final class TokenResponseFactory {
     public static final WritableMap authorizationResponseToMap(AuthorizationResponse authResponse) {
         WritableMap map = Arguments.createMap();
         map.putString("authorizationCode", authResponse.authorizationCode);
+        map.putString("codeVerifier", authResponse.request.codeVerifier);
         map.putString("accessToken", authResponse.accessToken);
         map.putMap("additionalParameters", MapUtil.createAdditionalParametersMap(authResponse.additionalParameters));
         map.putString("idToken", authResponse.idToken);

@@ -143,6 +143,7 @@ This is the result from the auth server:
 - **tokenType** - (`string`) the token type, e.g. Bearer
 - **scopes** - ([`string`]) the scopes the user has agreed to be granted
 - **authorizationCode** - (`string`) the authorization code (only if `skipCodeExchange=true`)
+- **codeVerifier** - (`string`) generated code verifier (only if `skipCodeExchange=true`)
 
 ### `refresh`
 

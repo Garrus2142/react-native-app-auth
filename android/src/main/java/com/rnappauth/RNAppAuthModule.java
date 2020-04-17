@@ -479,7 +479,7 @@ public class RNAppAuthModule extends ReactContextBaseJavaModule implements Activ
         if (tokenEndpointAuthMethod != null) {
             registrationRequestBuilder.setTokenEndpointAuthenticationMethod(tokenEndpointAuthMethod);
         }
-        
+
         RegistrationRequest registrationRequest = registrationRequestBuilder.build();
 
         AuthorizationService.RegistrationResponseCallback registrationResponseCallback = new AuthorizationService.RegistrationResponseCallback() {
